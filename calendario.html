@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário com Anotações</title>
+    <link rel="stylesheet" href="css/calendario.css">
+</head>
+
+<body>
+    
+
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prev-month">←</button>
+            <span id="month-name"></span>
+            <button id="next-month">→</button>
+        </div>
+        <div class="calendar-grid">
+
+        </div>
+
+        <div class="modal" id="modal">
+
+            <div class="modal-content">
+                <button id="close-modal" class="fechar">X</button>
+                <button id="save-note" class="hidden">Ver dados</button>
+                <h3>Relatório Diário</h3>
+                <p class="quant">Quantidade: 20 carretas</p>
+                <h4 class="espace">Balança</h4>
+                <p class="text-paragrafo">Média do peso: 20T</p>
+                <button  onclick="window.location.href='info/balanca.html';">Ver dados</button>
+                <h4 class="espace">Laboratório</h4>
+                <p class="text-paragrafo">Peso liquido balança samarco 258.740 Toneladas</p>
+                <textarea id="note-text" placeholder="" class="hidden"></textarea>
+                <button id="save-note" onclick="window.location.href='info/laboratorio.html';">Ver dados</button>
+                
+                
+
+
+            </div>
+        </div>
+
+        <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balança</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .data-table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+            font-size: 12px; /* Fonte menor para compactar */
+        }
+
+        .data-table th, 
+        .data-table td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 5px; /* Menor espaçamento */
+        }
+
+        .data-table th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        .data-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .data-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .totals-row {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <button id="save-note" onclick="window.location.href='/calendario.html';">voltar</button> 
+    <h1 style="text-align: center;">Planilha de Controle de Pesagem</h1>
+    <div class="table-container">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>DATA</th>
+                    <th>NOTA FISCAL</th>
+                    <th>Nº TB-e</th>
+                    <th>PESO BRUTO HERC.</th>
+                    <th>PESO LÍQUIDO HERC.</th>
+                    <th>TARA HERC.</th>
+                    <th>PESO BRUTO SAMARCO</th>
+                    <th>PESO LÍQUIDO SAMARCO</th>
+                    <th>TARA SAMARCO</th>
+                    <th>DIF. PESO</th>
+                    <th>TRANSPORTADORA</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605552</td>
+                    <td>44.700</td>
+                    <td>27.200</td>
+                    <td>17.500</td>
+                    <td>44.860</td>
+                    <td>27.300</td>
+                    <td>17.560</td>
+                    <td>-100</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605554</td>
+                    <td>44.720</td>
+                    <td>27.150</td>
+                    <td>16.670</td>
+                    <td>43.420</td>
+                    <td>26.830</td>
+                    <td>16.580</td>
+                    <td>-320</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605555</td>
+                    <td>44.480</td>
+                    <td>27.020</td>
+                    <td>17.390</td>
+                    <td>44.630</td>
+                    <td>27.170</td>
+                    <td>17.460</td>
+                    <td>-150</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605556</td>
+                    <td>44.490</td>
+                    <td>27.050</td>
+                    <td>17.300</td>
+                    <td>44.870</td>
+                    <td>27.350</td>
+                    <td>17.520</td>
+                    <td>-300</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605557</td>
+                    <td>44.800</td>
+                    <td>27.130</td>
+                    <td>17.670</td>
+                    <td>44.600</td>
+                    <td>27.230</td>
+                    <td>17.560</td>
+                    <td>-200</td>
+                    <td>LENARGE</td>
+                </tr>
+                
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605558</td>
+                    <td>44.520</td>
+                    <td>27.140</td>
+                    <td>17.380</td>
+                    <td>44.550</td>
+                    <td>27.140</td>
+                    <td>17.800</td>
+                    <td>-10</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                <tr>
+                    <td>18/10/2024</td>
+                    <td>GLOBAL</td>
+                    <td>605559</td>
+                    <td>44.350</td>
+                    <td>27.300</td>
+                    <td>17.050</td>
+                    <td>44.400</td>
+                    <td>27.350</td>
+                    <td>17.900</td>
+                    <td>-50</td>
+                    <td>LENARGE</td>
+                </tr>
+                
+                <tr class="totals-row">
+                    <td colspan="3">Totais</td>
+                    <td>1.247.310</td>
+                    <td>761.770</td>
+                    <td></td>
+                    <td>1.250.340</td>
+                    <td>758.740</td>
+                    <td></td>
+                    <td>193.110</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
